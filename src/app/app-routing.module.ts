@@ -18,7 +18,9 @@ const routes: Routes = [
   { path: 'simple', loadChildren: './simple/simple.module#SimplePageModule' },
   { path: 'geolocation', loadChildren: './geolocation/geolocation.module#GeolocationPageModule' },
   { path: 'marker', loadChildren: './marker/marker.module#MarkerPageModule' },
-  { path: 'direction', loadChildren: './direction/direction.module#DirectionPageModule' }
+  { path: 'direction', loadChildren: './direction/direction.module#DirectionPageModule' },
+  { path: 'direction-geo', loadChildren: './direction-geo/direction-geo.module#DirectionGeoPageModule' },
+  { path: 'autocomplete', loadChildren: './autocomplete/autocomplete.module#AutocompletePageModule' }
 ];
 
 @NgModule({

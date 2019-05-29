@@ -33,6 +33,14 @@ export class AppComponent {
       title: 'Direction',
       url: '/direction',
       icon: 'list'
+    }, {
+      title: 'Direction with GeoLocation',
+      url: '/direction-geo',
+      icon: 'list'
+    }, {
+      title: 'Autocomplete',
+      url: '/autocomplete',
+      icon: 'list'
     }
   ];
 

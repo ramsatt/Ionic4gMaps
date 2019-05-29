@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Direction</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <form [formGroup]="directionForm" (ngSubmit)="calculateAndDisplayRoute(directionForm.value)">
+    <ion-item>
+      <ion-label position="floating">Source</ion-label>
+      <ion-input formControlName="source"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Destination</ion-label>
+      <ion-input formControlName="destination"></ion-input>
+    </ion-item>
+    <ion-button expand="full" type="submit" [disabled]="!directionForm.valid">Get Direction</ion-button>
+  </form>
+  <div #mapElement class="map"></div>
+</ion-content>
